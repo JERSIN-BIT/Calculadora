@@ -1,28 +1,37 @@
+/* Quita los márgenes y rellenos que vienen por defecto en la página */
 * {
-    margin: 0px;
+    margin: 0px; 
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Hace que el tamaño de los elementos sea más fácil de manejar */
+} 
+
+/* Caja principal de la calculadora: aquí se define su tamaño, color y bordes */
+.calculadora {
+    padding: 10px; /* Espacio interno */
+    margin: 20px; /* Espacio externo */
+    max-width: 300px; /* Ancho máximo */
+    border: 1px solid black; /* Borde negro alrededor */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: darkgrey; /* Color de fondo */
 }
-.calculadora{
-    padding: 10px;
-    margin: 20px;
-    max-width: 300px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: darkgrey;
+
+/* Organiza todos los botones en forma de cuadrícula */
+.grilla {
+    display: grid; /* Coloca los botones en una cuadrícula */
+    grid-template-columns: repeat(4,1fr); /* Crea 4 columnas del mismo ancho */
+    gap: 10px; /* Espacio entre los botones */
+    margin-bottom: 10px; /* Espacio debajo de la cuadrícula */
 }
-.grilla{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    margin-bottom: 10px;
+
+/* Apariencia de cada botón */
+button {
+    padding: 10px; /* Espacio dentro del botón */
+    border-radius: 10px; /* Bordes redondeados del botón */
 }
-button{
-    padding: 10px;
-    border-radius: 10px;
-}
-.resultado{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+
+/* Caja donde se muestra el resultado */
+.resultado {
+    width: 100%; /* Que ocupe todo el ancho disponible */
+    padding: 10px; /* Espacio interno */
+    margin-bottom: 20px; /* Espacio inferior */
 }
