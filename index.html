@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora"> <!-- EL CONTENEDOR DE LA CALCULADORA-->
+        <h1>KACYO</h1> <!--TITULO DE LA CALCULADORA -->
+        <input type="text" class="resultado" disabled id="resul"> <!--CAMPO QUE MUESTRA LOS NUMEROS Y EL RESULTADO-->
+        <div class="grilla"> <!--CONTENEDOR PARA MOSTRA 4 POR FILA-->
+            <button onclick="agregarNumero('7')">7</button> <!--BOTON DE CADA NUMERO, UTILIZA EVENTO PARA PRESENTAR DATOS-->
+            <button onclick="agregarNumero('8')">8</button>
+            <button onclick="agregarNumero('9')">9</button>
+            <button onclick="agregarOperacion('/')">/</button> <!--BOTON DE CADA SIMBOLO, UTILIZA EVENTO PARA EL SIMBOLO DE LA OPERACION-->
+        </div>
+        <div class="grilla">
+            <button onclick="agregarNumero('4')">4</button> 
+            <button onclick="agregarNumero('5')">5</button>
+            <button onclick="agregarNumero('6')">6</button>
+            <button onclick="agregarOperacion('*')">*</button>
+        </div>
+        <div class="grilla">
+            <button onclick="agregarNumero('1')">1</button>
+            <button onclick="agregarNumero('2')">2</button>
+            <button onclick="agregarNumero('3')">3</button>
+            <button onclick="agregarOperacion('-')">-</button>
+        </div>
+        <div class="grilla">
+            <button onclick="agregarNumero('0')">0</button>
+            <button onclick="agregarOperacion('C')">C</button>
+            <button onclick="agregarOperacion('=')">=</button>
+            <button onclick="agregarOperacion('+')">+</button>
+        </div>
+    </div>
+    <script src="calcu.js"></script>
+    <footer><h1>alexisbenavides969@gma.com</h1></footer>
+</body>
+</html>
